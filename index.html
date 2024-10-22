@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación de Procesos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Evaluación de Procesos</h1>
+    </header>
+    <main>
+        <!-- Sección para las preguntas -->
+        <section id="questionnaire">
+            <p>Escribe tus preguntas y asigna una prioridad (1, 3 o 5) a cada una:</p>
+            <div id="questionsContainer">
+                <div class="question-row">
+                    <input type="text" placeholder="Pregunta 1" class="question-text">
+                    <input type="number" min="1" max="5" class="priority-input" placeholder="Prioridad">
+                </div>
+                <div class="question-row">
+                    <input type="text" placeholder="Pregunta 2" class="question-text">
+                    <input type="number" min="1" max="5" class="priority-input" placeholder="Prioridad">
+                </div>
+                <div class="question-row">
+                    <input type="text" placeholder="Pregunta 3" class="question-text">
+                    <input type="number" min="1" max="5" class="priority-input" placeholder="Prioridad">
+                </div>
+                <div class="question-row">
+                    <input type="text" placeholder="Pregunta 4" class="question-text">
+                    <input type="number" min="1" max="5" class="priority-input" placeholder="Prioridad">
+                </div>
+                <div class="question-row">
+                    <input type="text" placeholder="Pregunta 5" class="question-text">
+                    <input type="number" min="1" max="5" class="priority-input" placeholder="Prioridad">
+                </div>
+            </div>
+            <button id="calculateBtn">Calcular Intensidad R</button>
+        </section>
+
+        <!-- Sección de la tabla de evaluación -->
+        <section id="dataTable">
+            <h2>Tabla de Evaluación</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aspecto</th>
+                        <th>Prioridad</th>
+                        <th>Recepción del maíz</th>
+                        <th>Intensidad R</th>
+                        <th>Preparación del maíz</th>
+                        <th>Intensidad R</th>
+                        <th>Elaboración del Nixtamal</th>
+                        <th>Intensidad R</th>
+                        <th>Lavado y Reposo del Nixtamal</th>
+                        <th>Intensidad R</th>
+                        <th>Molienda</th>
+                        <th>Intensidad R</th>
+                        <th>Deshidratación</th>
+                        <th>Intensidad R</th>
+                        <th>Envasado y Almacenaje</th>
+                        <th>Intensidad R</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Fila: Color -->
+                    <tr>
+                        <td>Color</td>
+                        <td><input type="number" value="0" class="priority"></td>
+                        <td><input type="number" value="0" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="0" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="0" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="0" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="0" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="0" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="0" class="value"></td>
+                        <td class="intensidadR"></td>
+                    </tr>
+                    <!-- Fila: Sabor -->
+                    <tr>
+                        <td>Sabor</td>
+                        <td><input type="number" value="0" class="priority"></td>
+                        <td><input type="number" value="0" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="0" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="0" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="0" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="0" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="0" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="0" class="value"></td>
+                        <td class="intensidadR"></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr id="totalRow">
+                        <td>Total Intensidad R</td>
+                        <td></td>
+                        <td class="totalR"></td>
+                        <td></td>
+                        <td class="totalR"></td>
+                        <td></td>
+                        <td class="totalR"></td>
+                        <td></td>
+                        <td class="totalR"></td>
+                        <td></td>
+                        <td class="totalR"></td>
+                        <td></td>
+                        <td class="totalR"></td>
+                        <td></td>
+                        <td class="totalR"></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Sección para mostrar los resultados -->
+        <section id="resultSection">
+            <h2>Resultados de Intensidad R</h2>
+            <div id="resultContainer"></div>
+        </section>
+
+        <!-- NUEVA SECCIÓN: Conclusiones -->
+        <section id="conclusionsSection">
+            <h2>Conclusiones</h2>
+            <textarea id="conclusionsText" rows="5" cols="50" placeholder="Escribe tus conclusiones aquí..."></textarea>
+        </section>
+
+        <!-- NUEVA SECCIÓN: Tabla con el valor más alto -->
+        <section id="highestValuesSection">
+            <h2>Valores Máximos de Intensidad</h2>
+            <table id="highestValuesTable">
+                <thead>
+                    <tr>
+                        <th>Aspecto</th>
+                        <th>Máximo Intensidad R</th>
+                        <th>Máximo Intensidad Relativa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Máximo</td>
+                        <td id="maxIntensityR">-</td>
+                        <td id="maxRelativeIntensity">-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- NUEVA SECCIÓN: Comentarios -->
+        <section id="commentsSection">
+            <h2>Comentarios</h2>
+            <textarea id="commentsText" rows="5" cols="50" placeholder="Escribe tus comentarios aquí..."></textarea>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
