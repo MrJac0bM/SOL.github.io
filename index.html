@@ -51,6 +51,8 @@
                         <th>Intensidad R</th>
                         <th>Preparación del maíz</th>
                         <th>Intensidad R</th>
+                        <th>Almacenaje del maíz</th>
+                        <th>Intensidad R</th>
                         <th>Elaboración del Nixtamal</th>
                         <th>Intensidad R</th>
                         <th>Lavado y Reposo del Nixtamal</th>
@@ -59,47 +61,198 @@
                         <th>Intensidad R</th>
                         <th>Deshidratación</th>
                         <th>Intensidad R</th>
-                        <th>Envasado y Almacenaje</th>
-                        <th>Intensidad R</th>
+                        <th>Envasado y Almacenaje</th> <!-- Columna agregada -->
+                        <th>Intensidad R</th> <!-- Columna de Intensidad R para "Envasado y Almacenaje" -->
                     </tr>
                 </thead>
                 <tbody>
                     <!-- Fila: Color -->
                     <tr>
                         <td>Color</td>
-                        <td><input type="number" value="0" class="priority"></td>
-                        <td><input type="number" value="0" class="value"></td>
+                        <td><input type="number" value="1" class="priority"></td>
+                        <td><input type="number" value="5" class="value"></td>
                         <td class="intensidadR"></td>
-                        <td><input type="number" value="0" class="value"></td>
+                        <td><input type="number" value="3" class="value"></td>
                         <td class="intensidadR"></td>
-                        <td><input type="number" value="0" class="value"></td>
+                        <td><input type="number" value="4" class="value"></td>
                         <td class="intensidadR"></td>
-                        <td><input type="number" value="0" class="value"></td>
+                        <td><input type="number" value="7" class="value"></td>
                         <td class="intensidadR"></td>
-                        <td><input type="number" value="0" class="value"></td>
+                        <td><input type="number" value="8" class="value"></td>
                         <td class="intensidadR"></td>
-                        <td><input type="number" value="0" class="value"></td>
+                        <td><input type="number" value="2" class="value"></td>
                         <td class="intensidadR"></td>
-                        <td><input type="number" value="0" class="value"></td>
+                        <td><input type="number" value="6" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="9" class="value"></td> <!-- Campo "Envasado y Almacenaje" -->
                         <td class="intensidadR"></td>
                     </tr>
                     <!-- Fila: Sabor -->
                     <tr>
                         <td>Sabor</td>
-                        <td><input type="number" value="0" class="priority"></td>
-                        <td><input type="number" value="0" class="value"></td>
+                        <td><input type="number" value="2" class="priority"></td>
+                        <td><input type="number" value="4" class="value"></td>
                         <td class="intensidadR"></td>
-                        <td><input type="number" value="0" class="value"></td>
+                        <td><input type="number" value="5" class="value"></td>
                         <td class="intensidadR"></td>
-                        <td><input type="number" value="0" class="value"></td>
+                        <td><input type="number" value="3" class="value"></td>
                         <td class="intensidadR"></td>
-                        <td><input type="number" value="0" class="value"></td>
+                        <td><input type="number" value="6" class="value"></td>
                         <td class="intensidadR"></td>
-                        <td><input type="number" value="0" class="value"></td>
+                        <td><input type="number" value="7" class="value"></td>
                         <td class="intensidadR"></td>
-                        <td><input type="number" value="0" class="value"></td>
+                        <td><input type="number" value="1" class="value"></td>
                         <td class="intensidadR"></td>
-                        <td><input type="number" value="0" class="value"></td>
+                        <td><input type="number" value="4" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="2" class="value"></td> <!-- Campo "Envasado y Almacenaje" -->
+                        <td class="intensidadR"></td>
+                    </tr>
+                    <!-- Fila: Olor -->
+                    <tr>
+                        <td>Olor</td>
+                        <td><input type="number" value="3" class="priority"></td>
+                        <td><input type="number" value="6" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="5" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="7" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="6" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="9" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="4" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="8" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="6" class="value"></td> <!-- Campo "Envasado y Almacenaje" -->
+                        <td class="intensidadR"></td>
+                    </tr>
+                    <!-- Fila: Humedad -->
+                    <tr>
+                        <td>Humedad</td>
+                        <td><input type="number" value="1" class="priority"></td>
+                        <td><input type="number" value="2" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="6" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="5" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="7" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="8" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="4" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="9" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="3" class="value"></td> <!-- Campo "Envasado y Almacenaje" -->
+                        <td class="intensidadR"></td>
+                    </tr>
+                    <!-- Fila: Rendimiento -->
+                    <tr>
+                        <td>Rendimiento</td>
+                        <td><input type="number" value="2" class="priority"></td>
+                        <td><input type="number" value="7" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="8" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="6" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="9" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="10" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="8" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="7" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="6" class="value"></td> <!-- Campo "Envasado y Almacenaje" -->
+                        <td class="intensidadR"></td>
+                    </tr>
+                    <!-- Fila: Peso -->
+                    <tr>
+                        <td>Peso</td>
+                        <td><input type="number" value="3" class="priority"></td>
+                        <td><input type="number" value="4" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="5" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="8" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="7" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="9" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="10" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="6" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="8" class="value"></td> <!-- Campo "Envasado y Almacenaje" -->
+                        <td class="intensidadR"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Presentación y calidad de embasado</td>
+                        <td><input type="number" value="3" class="priority"></td>
+                        <td><input type="number" value="4" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="5" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="8" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="7" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="9" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="10" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="6" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="8" class="value"></td> <!-- Campo "Envasado y Almacenaje" -->
+                        <td class="intensidadR"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Quejas acerca del sabor y olor</td>
+                        <td><input type="number" value="3" class="priority"></td>
+                        <td><input type="number" value="4" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="5" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="8" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="7" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="9" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="10" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="6" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="8" class="value"></td> <!-- Campo "Envasado y Almacenaje" -->
+                        <td class="intensidadR"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Resultados internos</td>
+                        <td><input type="number" value="3" class="priority"></td>
+                        <td><input type="number" value="4" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="5" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="8" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="7" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="9" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="10" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="6" class="value"></td>
+                        <td class="intensidadR"></td>
+                        <td><input type="number" value="8" class="value"></td> <!-- Campo "Envasado y Almacenaje" -->
                         <td class="intensidadR"></td>
                     </tr>
                 </tbody>
@@ -120,6 +273,8 @@
                         <td class="totalR"></td>
                         <td></td>
                         <td class="totalR"></td>
+                        <td></td>
+                        <td class="totalR"></td> <!-- Columna de "Total Intensidad R" para "Envasado y Almacenaje" -->
                         <td></td>
                     </tr>
                 </tfoot>
