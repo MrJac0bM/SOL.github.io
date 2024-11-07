@@ -39,7 +39,7 @@ th {
 }
 
 input[type="number"], input[type="text"] {
-    width: 100%;
+    width: 80px;
     padding: 5px;
 }
 
